@@ -10,17 +10,18 @@ import Routes from '../routes/Routes'
 const Layout = () => {
     return (
         <BrowserRouter>
-            <Route render={props => (
-                <div>
-                    <Header {...props} />
-                    <div className="container">
-                        <div className="main">
-                            <Routes/>
-                        </div>
+            <Route>
+            <div>
+                <Header/>
+                <div className="container">
+                    <div className="main">
+                        <Routes/>
                     </div>
-                    <Footer/>
                 </div>
-            )}/>
+                <Footer/>
+            </div>
+            </Route>
+            
         </BrowserRouter>
     )
 }

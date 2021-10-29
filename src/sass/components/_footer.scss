@@ -1,7 +1,20 @@
 .footer {
-    padding:  70px 0;
-    font-size: 1.1rem;
+    &_top{
+        margin-top: 49px;            
+    }
+    &_bottom{
+        margin-top: 22px;            
+    }
+    .container {
+        padding:0 100px ;
 
+
+        .line{
+            height: 1px;
+            background-color: #f4f4f4;
+        }
+
+    }
     &_logo {
         height: 70px;
     }
@@ -13,14 +26,27 @@
     }
 
     &_title {
-        text-transform: uppercase;
-        margin-bottom: 2rem;
+        margin-bottom: 22px;
         font-weight: 600;
+
+        
     }
 
     &_content {
+        &_txt {
+            width: 235px;
+            line-height: 2.14;
+            text-align: left;
+            color: #111;
+        }
         p {
-            margin-bottom: 1.25rem;
+            font-weight: 300;
+            line-height: 2.21;
+            font-stretch: normal;
+            font-style: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #333;
         }
     }
 }

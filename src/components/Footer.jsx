@@ -49,107 +49,121 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="container">
-                <Grid 
-                    col={2}
-                    mdCol={2}
-                    smcol={1}
-                    gap={10}
-                >
-                    <div>
-                        <div className="footer_title">
-                            what happened
-                        </div>
-                        <div className="footer_content">
-                            [공지] 개인 정보 처리 방침 변경 사전 안내
-                            [공지] 29CM 강남 스토어 영업 종료
-                            [공지] 개인 정보 처리 방침 변경 사전 안내
-                            [공지] iOS 10 이하 버전 지원 중단 안내
-                            [공지] 개인 정보 처리 방침 변경 사전 안내
-                        </div>
-                    </div>
-                    
-                    <div className="content">
+                <div className="line"></div>
+                <div className="footer_top">
+                    <Grid 
+                        col={2}
+                        mdCol={2}
+                        smcol={1}
+                        gap={10}
+                    >
                         <div>
                             <div className="footer_title">
-                                about us
+                                what happened
                             </div>
                             <div className="footer_content">
-                                {
-                                    footerAboutLinks.map((item, index) => (
-                                        <p key={index}>
-                                            <Link to={item.path}>
-                                                {item.display}
-                                            </Link>
-                                        </p>
-                                    ))
-                                }                            
+                                <p className="footer_content_txt">[공지] 개인 정보 처리 방침 변경 사전 안내
+                                [공지] 29CM 강남 스토어 영업 종료
+                                [공지] 개인 정보 처리 방침 변경 사전 안내
+                                [공지] iOS 10 이하 버전 지원 중단 안내
+                                [공지] 개인 정보 처리 방침 변경 사전 안내</p>
                             </div>
                         </div>
+                        
+                        <Grid 
+                            col={4}
+                            mdCol={2}
+                            smcol={1}
+                            gap={10}
+                        >
+                            <div>
+                                <div className="footer_title">
+                                    about us
+                                </div>
+                                <div className="footer_content">
+                                    {
+                                        footerAboutLinks.map((item, index) => (
+                                            <p key={index}>
+                                                <Link to={item.path}>
+                                                    {item.display}
+                                                </Link>
+                                            </p>
+                                        ))
+                                    }                            
+                                </div>
+                            </div>
 
-                        <div>
-                            <div className="footer_title">
-                                my order
+                            <div>
+                                <div className="footer_title">
+                                    my order
+                                </div>
+                                <div className="footer_content">
+                                    {
+                                        footerOrderLinks.map((item, index) => (
+                                            <p key={index}>
+                                                <Link to={item.path}>
+                                                    {item.display}
+                                                </Link>
+                                            </p>
+                                        ))
+                                    }                            
+                                </div>
                             </div>
-                            <div className="footer_content">
-                                {
-                                    footerOrderLinks.map((item, index) => (
-                                        <p key={index}>
-                                            <Link to={item.path}>
-                                                {item.display}
-                                            </Link>
-                                        </p>
-                                    ))
-                                }                            
+
+                            <div>
+                                <div className="footer_title">
+                                    my account
+                                </div>
+                                <div className="footer_content">
+                                    {
+                                        footerOrderLinks.map((item, index) => (
+                                            <p key={index}>
+                                                <Link to={item.path}>
+                                                    {item.display}
+                                                </Link>
+                                            </p>
+                                        ))
+                                    }                            
+                                </div>
                             </div>
+
+                            <div>
+                                <div className="footer_title">
+                                    help
+                                </div>
+                                <div className="footer_content">
+                                    {
+                                        footerOrderLinks.map((item, index) => (
+                                            <p key={index}>
+                                                <Link to={item.path}>
+                                                    {item.display}
+                                                </Link>
+                                            </p>
+                                        ))
+                                    }                            
+                                </div>
+                            </div>
+
+                        </Grid>
+
+                        <div className="footer_about">
+                            <p>
+                                <Link to="/">
+                                    <img src={logo} className="footer_logo" alt="" />
+                                </Link>
+                            </p>
+                            <p>
+                                
+                            </p>
                         </div>
+                    </Grid>
+                </div>
+                <div className="line"></div>
 
-                        <div>
-                            <div className="footer_title">
-                                my order
-                            </div>
-                            <div className="footer_content">
-                                {
-                                    footerOrderLinks.map((item, index) => (
-                                        <p key={index}>
-                                            <Link to={item.path}>
-                                                {item.display}
-                                            </Link>
-                                        </p>
-                                    ))
-                                }                            
-                            </div>
-                        </div>
+                <div className="footer_bottom">
 
-                        <div>
-                            <div className="footer_title">
-                                my order
-                            </div>
-                            <div className="footer_content">
-                                {
-                                    footerOrderLinks.map((item, index) => (
-                                        <p key={index}>
-                                            <Link to={item.path}>
-                                                {item.display}
-                                            </Link>
-                                        </p>
-                                    ))
-                                }                            
-                            </div>
-                        </div>
+                </div>
 
-                    </div>
-
-                    <div className="footer_about">
-                        <p>
-                            <Link to="/">
-                                <img src={logo} className="footer_logo" alt="" />
-                            </Link>
-                        </p>
-                        <p>
-                            
-                        </p>
-                    </div>
-                </Grid>
             </div>
         </footer>
     )
