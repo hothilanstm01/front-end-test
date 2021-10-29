@@ -13,10 +13,8 @@ const Layout = () => {
             <Route>
             <div>
                 <Header/>
-                <div className="container">
-                    <div className="main">
-                        <Routes/>
-                    </div>
+                <div className="main">
+                    <Routes/>
                 </div>
                 <Footer/>
             </div>

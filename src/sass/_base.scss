@@ -8,6 +8,7 @@
     box-sizing: border-box;
     -webkit-tab-highlight-color: transparent;
     user-select: none;
+    transition: .2s linear;
 }
 
 html
@@ -32,10 +33,6 @@ a {
     text-decoration: none;
     color: unset;
 }
-
-// a:hover {
-//     color: $main-color;
-// }
 
 video {
     max-width: 100%;
@@ -97,11 +94,11 @@ img {
     min-height: 100vh;
 
     @include tablet {
-        margin-top: calc(#{$header-tablet-height} + 20px);
+        margin-top: calc(#{$header-tablet-height} + 0px);
     }
 
     @include mobile {
-        margin-top: calc(#{$header-mobile-height} + 10px);
+        margin-top: calc(#{$header-mobile-height} + 0px);
     }
 }
 

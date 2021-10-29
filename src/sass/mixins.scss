@@ -15,3 +15,8 @@
         @content;
     }
 }
+
+@mixin font($size) {
+    font-size: $size;
+    color: $txt-white;
+}
