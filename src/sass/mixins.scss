@@ -10,6 +10,12 @@
     }
 }
 
+@mixin mid {
+    @media only screen and (max-width: $mid-width) {
+        @content;
+    }
+}
+
 @mixin tablet {
     @media only screen and (max-width: $tablet-width) {
         @content;

@@ -9,10 +9,11 @@ const Grid = props => {
 
     const col = props.col ? `grid-col-${props.col}` : ''
     const mdcol = props.mdcol ? `grid-col-md-${props.mdcol}` : ''
+    const midcol = props.midcol ? `grid-col-mid-${props.midcol}` : ''
     const smcol = props.smcol ? `grid-col-sm-${props.smcol}` : ''
 
     return (
-        <div className={`grid ${col} ${smcol} ${mdcol}`} style={style}>
+        <div className={`grid ${col} ${smcol} ${mdcol} ${midcol}`} style={style}>
             {props.children}
         </div>
     )
@@ -21,6 +22,7 @@ const Grid = props => {
 Grid.propTypes = {
     col: PropTypes.number.isRequired,
     mdCol: PropTypes.number,
+    midCol: PropTypes.number,
     smCol: PropTypes.number,
     gap: PropTypes.number
 }

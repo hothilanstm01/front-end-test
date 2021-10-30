@@ -66,6 +66,14 @@ img {
 }
 
 @each $val in $numbers {
+    .grid-col-mid-#{$val} {
+        @include tablet {
+            grid-template-columns: repeat($val, 1fr);
+        }        
+    }
+}
+
+@each $val in $numbers {
     .grid-col-sm-#{$val} {
         @include mobile {
             grid-template-columns: repeat($val, 1fr);
