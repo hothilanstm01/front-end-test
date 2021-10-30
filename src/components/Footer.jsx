@@ -5,6 +5,10 @@ import { Link } from 'react-router-dom'
 import Grid from './Grid'
 
 import logo from '../assets/images/logo.png'
+import snsicon01 from '../assets/images/icon/snsicon-01.png'
+import snsicon02 from '../assets/images/icon/snsicon-02.png'
+import snsicon03 from '../assets/images/icon/snsicon-03.png'
+
 
 
 const footerAboutLinks = [
@@ -161,7 +165,22 @@ const Footer = () => {
                 <div className="line"></div>
 
                 <div className="footer_bottom">
-
+                <Grid
+                    col={2}
+                    mdCol={1}
+                    smcol={1}
+                    gap={0}
+                >
+                <div className="footer_bottom1">
+                    © 2020-2021 what happened corp  l  (주) 왓헤픈 ｜ 대표자 : 홍길동 ｜ 사업자 등록번호 : 356-00-00000 ㅣ test0101@what happened.co.kr
+                    서울특별시 강남구 도산대로 8길 17 ｜ FAX : 070-0000-0000  l  서비스 이용약관  l  개인정보처리방침
+                </div>
+                <div className="footer_bottom2">
+                    <img src={snsicon01} alt="" />
+                    <img src={snsicon02} alt="" />
+                    <img src={snsicon03} alt="" />
+                </div>
+                </Grid>
                 </div>
 
             </div>

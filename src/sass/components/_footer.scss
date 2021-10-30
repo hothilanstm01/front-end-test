@@ -4,6 +4,7 @@
     }
     &_bottom{
         margin-top: 22px;            
+        margin-bottom: 113px;            
     }
     .container {
         padding:0 100px ;
@@ -52,6 +53,42 @@
             letter-spacing: normal;
             text-align: left;
             color: #333;
+        }
+    }
+
+    
+    &_bottom1{
+        width: 839px;
+        font-size: 14px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: normal;
+        text-align: left;
+        color: #a9a9a9;
+        @include tablet {
+            width: 100%;
+        }
+    
+        @include mobile {
+        }
+    }
+    &_bottom2{
+        @include flex (flex-end, flex-end);
+
+        @include tablet {
+            @include flex (center, center);
+        }
+    
+        @include mobile {
+            margin-top: 20px;
+
+            @include flex (flex-start, flex-start);
+        }
+        img{
+            width:24px;
+            margin-right: 22px;
         }
     }
 }
