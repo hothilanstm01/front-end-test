@@ -384,8 +384,18 @@ const Home = () => {
 
             {/* video section */}
             <Section>
+                <div className="section_video">
                     <SectionTitle>
-                        News
+                        <div className="ttl video">
+                            what happened
+                        </div>
+                        <div className="section_title_video-text">
+                            How to create mobile-optimized videos in minutes. Not a designer, 
+                            every team makes a lot of videos Can be trimmed. Take the first 
+                        </div>
+                        <div className="section_title_see">
+                            <Link to="/" className="btn">see more</Link>
+                        </div>
                     </SectionTitle>
                     <SectionBody>
                         <Grid
@@ -397,7 +407,8 @@ const Home = () => {
                             
                         </Grid>
                     </SectionBody>
-                </Section>  
+                </div>
+            </Section>  
             {/* end video section */}
 
             
