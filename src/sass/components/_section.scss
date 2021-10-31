@@ -18,6 +18,7 @@
         padding-top: 100px;
       }
       @include mobile {
+        font-size: 2.3rem;
         padding-top: 50px;
       }
     }
@@ -110,9 +111,17 @@
 
     &_video-text {
       margin-bottom: 76px;
+
+      @include mobile {
+        margin-bottom: 40px;
+      }
     }
     .mor {
       margin-bottom: 93px;
+
+      @include mobile {
+        margin-bottom: 40px;
+      }
     }
 
     &_see {
@@ -165,6 +174,11 @@
     position: relative;
     z-index: 2;
     color: $black;
+    overflow: hidden;
+  }
+
+  &_video {
+    position: relative;
     overflow: hidden;
   }
 
@@ -631,7 +645,7 @@
           align-items: flex-start;
           z-index: 5;
           height: 418px;
-          
+
           @include mobile {
             flex-wrap: wrap;
             padding-bottom: 16px;
@@ -658,7 +672,7 @@
               border: solid 3px $black;
               background-color: $white;
               color: $txt-second-color;
-             
+
               @include ipad {
                 height: 353px;
               }
@@ -955,7 +969,6 @@
               margin-top: 28px;
               font-size: 2rem;
             }
-            
           }
           img {
             margin-top: 63px;
@@ -999,13 +1012,189 @@
             letter-spacing: normal;
             color: $txt-white;
             background: $black;
-           
+
             @include mobile {
               padding-top: 7px;
               padding-bottom: 9px;
               font-size: 0.875rem;
             }
           }
+        }
+      }
+    }
+
+    &_video-body {
+      width: 100%;
+      margin-top: 93px;
+
+      @include lab {
+        margin-top: 60px;
+      }
+      @include tablet {
+        margin-top: 40px;
+      }
+      @include mobile {
+        margin-top: 25px;
+      }
+      &_video {
+        position: relative;
+        z-index: 4;
+        padding: 0 335px;
+        padding-bottom: 392px;
+
+        @include lab {
+          padding: 0 250px;
+          padding-bottom: 392px;
+        }
+        @include tablet {
+          padding: 0 150px;
+          padding-bottom: 190px;
+        }
+        @include mid {
+          padding: 0 30px;
+          padding-bottom: 100px;
+        }
+        @include mobile {
+          padding: 0 20px;
+          padding-bottom: 30px;
+        }
+      }
+
+      &_video01 {
+        position: absolute;
+        bottom: 146px;
+        left: 348px;
+        z-index: 3;
+        @include lab {
+          left: 262px;
+        }
+        @include tablet {
+          width: 190px;
+          bottom: 72px;
+          left: 164px;
+        }
+        @include mid {
+          display: none;
+        }
+      }
+      &_video02 {
+        position: absolute;
+        bottom: 275px;
+        right: 648px;
+        z-index: 2;
+        @include lab {
+          width: 77px;
+          right: 536px;
+        }
+        @include tablet {
+          width: 45px;
+          bottom: 122px;
+          right: 340px;
+        }
+        @include mid {
+          display: none;
+        }
+      }
+      &_video03 {
+        position: absolute;
+        bottom: 314px;
+        left: 223px;
+        z-index: 2;
+        @include lab {
+    left: 137px;
+        }
+        @include tablet {
+          width: 100px;
+          bottom: 151px;
+          left: 77px;
+        }
+        @include mid {
+          display: none;
+        }
+      }
+      &_video04 {
+        position: absolute;
+        z-index: 2;
+        bottom: 861px;
+        left: -330px;
+        @include tablet {
+          width: 397px;
+          bottom: 417px;
+          left: -285px;
+        }
+        @include mid {
+          display: none;
+        }
+      }
+      &_video05 {
+        position: absolute;
+        z-index: 2;
+        left: 226px;
+        top: 0;
+        @include tablet {
+          width: 100px;
+          left: 126px;
+          top: 0;
+        }
+        @include mid {
+          display: none;
+        }
+      }
+      &_video06 {
+        position: absolute;
+        z-index: 3;
+        top: 270px;
+        right: 244px;
+        @include tablet {
+          width: 100px;
+          top: 220px;
+          right: 30px;
+        }
+        @include mid {
+          display: none;
+        }
+      }
+      &_video07 {
+        position: absolute;
+        z-index: 2;
+        top: 186px;
+        right: 150px;
+        @include tablet {
+          width: 137px;
+          top: 123px;
+          right: -72px;
+        }
+        @include mid {
+          display: none;
+        }
+      }
+      &_video08 {
+        position: absolute;
+        z-index: 3;
+        right: -196px;
+        bottom: 241px;
+        @include tablet {
+          width: 395px;
+          right: -196px;
+          bottom: 60px;
+        }
+        @include mid {
+          display: none;
+        }
+      }
+      &_video09 {
+        position: absolute;
+        z-index: 2;
+        height: 474px;
+        right: -168px;
+        bottom: 553px;
+        @include tablet {
+          width: 175px;
+          right: -78px;
+          bottom: 70px;
+        }
+        @include mid {
+          display: none;
         }
       }
     }

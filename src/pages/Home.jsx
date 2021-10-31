@@ -30,6 +30,7 @@ import pst5 from '../assets/images/icon/object-05.png'
 import pst6 from '../assets/images/icon/object-06.png'
 import pst7 from '../assets/images/icon/object-07.png'
 import window from '../assets/images/img.png'
+import video from '../assets/images/video.png'
 import issue01 from '../assets/images/icon/news-img-01.png'
 
 import xucxac1 from '../assets/images/news-object-03.png'
@@ -37,6 +38,19 @@ import xucxac2 from '../assets/images/icon/news-object-02.png'
 import obj1 from '../assets/images/icon/news-object-03.png'
 import obj2 from '../assets/images/icon/news-object-04.png'
 import obj3 from '../assets/images/icon/news-object-05.png'
+
+
+import video01 from '../assets/images/icon/video-object-01.png'
+import video02 from '../assets/images/icon/video-object-02.png'
+import video03 from '../assets/images/icon/video-object-03.png'
+import video04 from '../assets/images/icon/video-object-04.png'
+import video05 from '../assets/images/icon/video-object-05.png'
+import video06 from '../assets/images/icon/video-object-06.png'
+import video07 from '../assets/images/icon/video-object-07.png'
+import video08 from '../assets/images/icon/video-object-08.png'
+import video09 from '../assets/images/icon/video-object-09.png'
+
+
 
 
 
@@ -365,14 +379,36 @@ const Home = () => {
                         </div>
                     </SectionTitle>
                     <SectionBody>
-                        <Grid
-                            col={4}
-                            mdcol={2}
-                            smcol={1}
-                            gap={20}
-                        >
-                            
-                        </Grid>
+                        <div className="section_body_video-body_video01">
+                            <img src={video01} alt="" />
+                        </div>
+                        <div className="section_body_video-body_video02">
+                            <img src={video02} alt="" />
+                        </div>
+                        <div className="section_body_video-body_video03">
+                            <img src={video03} alt="" />
+                        </div>
+                        <div className="section_body_video-body_video04">
+                            <img src={video04} alt="" />
+                        </div>
+                        <div className="section_body_video-body_video05">
+                            <img src={video05} alt="" />
+                        </div>
+                        <div className="section_body_video-body_video06">
+                            <img src={video06} alt="" />
+                        </div>
+                        <div className="section_body_video-body_video07">
+                            <img src={video07} alt="" />
+                        </div>
+                        <div className="section_body_video-body_video08">
+                            <img src={video08} alt="" />
+                        </div>
+                        <div className="section_body_video-body_video09">
+                            <img src={video09} alt="" />
+                        </div>
+                        <div className="section_body_video-body_video">
+                            <img src={video} alt="" />
+                        </div>
                     </SectionBody>
                 </div>
             </Section>  
