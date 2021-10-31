@@ -25,7 +25,6 @@ const footerAboutLinks = [
         path: "/"
     }
 ]
-
 const footerOrderLinks = [
     {
         display: "내 주문",
@@ -48,7 +47,46 @@ const footerOrderLinks = [
         path: "/"
     }
 ]
-
+const footerAccountLinks = [
+    {
+        display: "회원 정보 수정",
+        path: "/"
+    },
+    {
+        display: "회원 등급",
+        path: "/"
+    },
+    {
+        display: "마일리지 현황",
+        path: "/"
+    },
+    {
+        display: "쿠폰",
+        path: "/"
+    }
+]
+const footerHelpLinks = [
+    {
+        display: "1 : 1 상담 내역",
+        path: "/"
+    },
+    {
+        display: "상품 Q & A 내역",
+        path: "/"
+    },
+    {
+        display: "공지 사항",
+        path: "/"
+    },
+    {
+        display: "자주하는 질문",
+        path: "/"
+    },
+    {
+        display: "고객의 소리",
+        path: "/"
+    }
+]
 const Footer = () => {
     return (
         <footer className="footer">
@@ -120,7 +158,7 @@ const Footer = () => {
                                 </div>
                                 <div className="footer_content">
                                     {
-                                        footerOrderLinks.map((item, index) => (
+                                        footerAccountLinks.map((item, index) => (
                                             <p key={index}>
                                                 <Link to={item.path}>
                                                     {item.display}
@@ -137,7 +175,7 @@ const Footer = () => {
                                 </div>
                                 <div className="footer_content">
                                     {
-                                        footerOrderLinks.map((item, index) => (
+                                        footerHelpLinks.map((item, index) => (
                                             <p key={index}>
                                                 <Link to={item.path}>
                                                     {item.display}

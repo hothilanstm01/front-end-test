@@ -41,6 +41,7 @@ import obj3 from '../assets/images/icon/news-object-05.png'
 
 
 const Home = () => {
+    
     return (
         <div>
             {/* banner  */}
@@ -323,9 +324,10 @@ const Home = () => {
 
                         <div className="section_body_issue-body_item">
                             <div className="section_body_issue-body_item_box">
-                                whpn
-                                issue  
+                            <p>whpn
+                                issue</p>  
                                 <img src={issue01} alt="" />
+                               
                             </div>
                             {
                                 brandData.map((item, index) => (

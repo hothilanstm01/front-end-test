@@ -52,7 +52,7 @@
         padding-top: 50px;
       }
     }
-    .video{
+    .video {
       line-height: 1.2;
       letter-spacing: 10px;
       font-weight: 800;
@@ -102,13 +102,14 @@
         padding: 0 7%;
         padding-top: 20px;
         font-size: 1rem;
+        margin-bottom: 25px;
       }
     }
 
-    &_video-text{
+    &_video-text {
       margin-bottom: 76px;
     }
-    .mor{
+    .mor {
       margin-bottom: 93px;
     }
 
@@ -374,22 +375,28 @@
       margin: 0 133px;
       margin-top: 142px;
       display: flex;
-      align-items: flex-start;  
-      column-gap: 18px;  
+      align-items: flex-start;
+      column-gap: 18px;
       flex-wrap: wrap;
       @include tablet {
         margin: 0;
         padding: 5rem 1rem 0 2rem;
       }
+      @include lab {
+        padding: 5rem 10px;
+        @include flex(center, flex-start);
+        margin: 0 85px;
+      }
+      @include ipad {
+        margin: 0 15.5px;
+      }
       @include mid {
-        margin-left: 2px;
-        padding: 5rem 4rem 0;
-        
+        @include flex(center, center);
       }
 
       @include mobile {
         padding: 5rem 0;
-        @include flex (center,center) 
+        @include flex(center, center);
       }
 
       &_box {
@@ -404,7 +411,6 @@
         @include mobile {
           width: 100%;
           text-align: center;
-          
         }
 
         &_title {
@@ -505,8 +511,8 @@
         }
         @include mobile {
           width: 3rem;
-          top: 4.4375rem;
-          left: 1.5625rem;
+          top: 6.4375rem;
+          left: 0.5625rem;
         }
       }
       &_position2 {
@@ -611,6 +617,7 @@
           width: 100%;
           display: flex;
           position: relative;
+          align-items: flex-start;
           z-index: 5;
           height: 418px;
           @include mobile {
@@ -618,37 +625,37 @@
             padding-bottom: 16px;
           }
           &_item {
-            .a {
-              width: 49%;
-            }
+            width: 50%;
             @include tablet {
               width: 50%;
             }
             @include mobile {
               width: 100%;
+
             }
             img {
+              width: 100%;
               height: 100%;
               @include mobile {
-                position: relative;
-                height: auto;
-                display: none;
-
+                height: 80%;
+              }
+              @include lab {
+                height: 353px;
               }
             }
             &_content {
-              padding: 63px 68px 54px 44px;
               border: solid 3px $black;
               background-color: $white;
               color: $txt-second-color;
+
               @include tablet {
-                height: 100%;
-                padding: 19px 0px 35px 12px;
+                padding: 12px 0px 35px 2px;
               }
               @include mobile {
                 position: absolute;
                 width: 100%;
                 top: 0;
+                height: 80%;
                 background: rgba(0, 0, 0, 0.1);
                 opacity: 1;
                 padding: 0;
@@ -657,18 +664,36 @@
                 padding: 10px 20px;
               }
               p.brandstory {
+                padding-top: 63px;
+                margin-left: 44px;
                 height: 20px;
                 font-size: 1.5625rem;
-                margin-bottom: 39px;
                 font-weight: 800;
                 font-stretch: normal;
                 font-style: normal;
                 letter-spacing: normal;
                 text-align: left;
                 text-transform: uppercase;
+                @include lab {
+                  font-size: 1.2rem;
+                  padding-top: 11px;
+                }
+                @include ipad {
+                  font-size: 1.2rem;
+                  padding-top: 32px;
+                }
+                @include tablet {
+                  margin-left: 20px;
+                }
+                @include mobile {
+                  font-size: 1.2rem;
+                  margin-left: 10px;
+                }
               }
               p.brandtext {
                 width: 528px;
+                margin-left: 44px;
+                padding-top: 61px;
                 font-size: 1rem;
                 font-weight: 300;
                 font-stretch: normal;
@@ -677,27 +702,52 @@
                 letter-spacing: normal;
                 text-align: left;
                 font-family: NotoSansCJKkr;
+                @include lab {
+                  width: 80%;
+                }
                 @include tablet {
                   width: 90%;
+                  font-size: 0.9rem;
+                  margin-left: 20px;
+                }
+                @include ipad {
+                  width: 80%;
+                  margin-top: 4px;
                 }
                 @include mobile {
                   width: 100%;
+                  margin-left: 10px;
                 }
+                
               }
               p.seemore {
                 width: 200px;
                 text-align: left;
-                margin: 47px 325px 0 4px;
+                margin: 47px 325px 54px 48px;
                 border: solid 3px #020001;
                 padding: 21px 37px;
-
+                @include lab {
+                  margin: 23px 325px 11px 48px; 
+                  padding: 4px 40px;
+                  padding: 10px 21px;
+                  width: 164px;
+                }
+                @include ipad {
+                  margin: 29px 325px 48px 48px;
+                }
+                @include tablet {
+                  margin: 29px 325px 6px 48px;
+                }
+                
                 @include mobile {
                   text-align: center;
                   width: 100%;
                   margin-top: 20px;
                   padding: 21px 37px;
                   border: solid 3px $white;
+                  margin: 42px 324px 33px 0px;
                 }
+
                 .btn {
                   font-size: 1.4375rem;
                   font-weight: 800;
@@ -720,9 +770,10 @@
       padding-bottom: 141px;
       position: relative;
       margin-top: 149px;
-      
+
       @include mobile {
-        padding-bottom: 0px;
+        padding-bottom: 57px;
+        margin-top: 58px;
       }
 
       &_obj1 {
@@ -731,7 +782,7 @@
         top: 42px;
         right: 70px;
         @include tablet {
-          width: 95px;
+          width: 82px;
           top: 42px;
           right: 70px;
         }
@@ -748,12 +799,12 @@
         top: 163px;
         right: 70px;
         @include tablet {
-          width: 95px;
-          top: 163px;
-          right: 70px;
+          width: 82px;
+          top: 131px;
+          right: 27px;
         }
         @include mobile {
-          width: 47px;
+          width: 40px;
           top: 25px;
           right: -18px;
         }
@@ -763,12 +814,17 @@
         width: 167px;
         position: absolute;
         bottom: 57px;
-          left: 230px;
+        left: 230px;
         z-index: 5;
+
         @include tablet {
           width: 95px;
-          bottom: 57px;
-          left: 230px;
+          bottom: 83px;
+          left: 127px;
+        }
+        @include mid {
+          bottom: 84px;
+          left: 80px;
         }
         @include mobile {
           display: none;
@@ -786,6 +842,10 @@
           top: 498px;
           left: 411px;
         }
+        @include mid {
+          bottom: 84px;
+          left: 80px;
+        }
         @include mobile {
           display: none;
         }
@@ -795,11 +855,11 @@
         width: 111px;
         position: absolute;
         bottom: 85px;
-          right: 353px;
+        right: 353px;
         z-index: 5;
         @include tablet {
           width: 95px;
-          bottom: 85px;
+          bottom: 105px;
           right: 353px;
         }
         @include mobile {
@@ -810,15 +870,13 @@
       &_item {
         display: flex;
         align-items: flex-start;
-        height: 480px;
         @include tablet {
-          display: none;
         }
-        &_box:nth-child(1){
+        &_box:nth-child(1) {
           width: 387px;
-          padding: 87px 101px 85px 97px;
+
           background-color: #f50;
-          font-size: 55px;
+          font-size: 3.438rem;
           font-weight: 800;
           font-stretch: normal;
           font-style: normal;
@@ -826,31 +884,66 @@
           letter-spacing: normal;
           text-align: center;
           color: #110e03;
-          
-          img{
+          @include tablet {
+            height: 310px;
+          }
+          @include mid {
+            height: 259px;
+          }
+          @include mobile {
+            display: none;
+          }
+          p {
+            margin-left: 97px;
+            width: 189px;
+            margin-top: 87px;
+            @include tablet {
+              margin-left: 0px;
+              margin-top: 28px;
+              font-size: 2rem;
+            }
+            @include mobile {
+              margin-left: 0px;
+              margin-top: 28px;
+              font-size: 2rem;
+            }
+          }
+          img {
             margin-top: 63px;
+            margin-bottom: 97px;
+            @include tablet {
+              width: 100px;
+              margin-top: 25px;
+              margin-bottom: 32px;
+            }
+            @include mobile {
+              width: 76px;
+              margin-top: 25px;
+              margin-bottom: 32px;
+            }
           }
 
-          
-          
+          @include tablet {
+            padding: 0;
+          }
         }
-        &_box:nth-child(5){
+        &_box:nth-child(5) {
           width: 383px;
         }
         &_box {
           text-transform: uppercase;
           width: 390px;
-          border: solid 3px #111 ;
+          border: solid 3px #111;
           border-left: 0;
-          
-          .bg{
+
+          .bg {
             background: #ff5500;
           }
-          &_heade{
+          &_heade {
             @include flex(center, center);
             padding-top: 27px;
             padding-bottom: 24px;
-            font-size: 30px;
+            font-size: 1.875rem;
             font-weight: 800;
             font-stretch: normal;
             font-style: normal;
@@ -858,9 +951,14 @@
             letter-spacing: normal;
             color: $txt-white;
             background: $black;
+
+            @include mobile {
+              padding-top: 7px;
+              padding-bottom: 9px;
+              font-size: 0.875rem;
+            }
           }
         }
-
       }
     }
   }
