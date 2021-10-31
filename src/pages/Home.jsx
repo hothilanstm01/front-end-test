@@ -358,7 +358,7 @@ const Home = () => {
                             How to create mobile-optimized videos in minutes. Not a designer, 
                             every team makes a lot of videos Can be trimmed. Take the first 
                         </div>
-                        <div className="section_title_see">
+                        <div className="section_title_see mor">
                             <Link to="/" className="btn">see more</Link>
                         </div>
                     </SectionTitle>

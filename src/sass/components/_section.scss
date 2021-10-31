@@ -52,8 +52,15 @@
         padding-top: 50px;
       }
     }
+    .video{
+      line-height: 1.2;
+      letter-spacing: 10px;
+      font-size: 50px;
+      font-weight: 800;
+    }
 
-    &_text-best {
+    &_text-best,
+    &_video-text {
       margin-top: 49px;
       text-transform: none;
       font-size: 1.25rem;
@@ -97,6 +104,13 @@
         padding-top: 20px;
         font-size: 1rem;
       }
+    }
+
+    &_video-text{
+      margin-bottom: 76px;
+    }
+    .mor{
+      margin-bottom: 93px;
     }
 
     &_see {
