@@ -55,7 +55,6 @@
     .video{
       line-height: 1.2;
       letter-spacing: 10px;
-      font-size: 50px;
       font-weight: 800;
     }
 
@@ -159,6 +158,7 @@
     position: relative;
     z-index: 2;
     color: $black;
+    overflow: hidden;
   }
 
   &_body {
@@ -615,6 +615,7 @@
           height: 418px;
           @include mobile {
             flex-wrap: wrap;
+            padding-bottom: 16px;
           }
           &_item {
             .a {
@@ -631,9 +632,8 @@
               @include mobile {
                 position: relative;
                 height: auto;
-                &:hover &_content {
-                  opacity: 1;
-                }
+                display: none;
+
               }
             }
             &_content {
@@ -649,13 +649,12 @@
                 position: absolute;
                 width: 100%;
                 top: 0;
-                background: rgba(78, 78, 77, 0.79);
+                background: rgba(0, 0, 0, 0.1);
                 opacity: 1;
                 padding: 0;
                 border: 0;
                 color: $txt-white;
                 padding: 10px 20px;
-                opacity: 0;
               }
               p.brandstory {
                 height: 20px;
@@ -693,6 +692,8 @@
                 padding: 21px 37px;
 
                 @include mobile {
+                  text-align: center;
+                  width: 100%;
                   margin-top: 20px;
                   padding: 21px 37px;
                   border: solid 3px $white;
@@ -735,9 +736,9 @@
           right: 70px;
         }
         @include mobile {
-          width: 95px;
-          top: 42px;
-          right: 70px;
+          width: 40px;
+          top: 0px;
+          right: 10px;
         }
       }
 
@@ -752,9 +753,9 @@
           right: 70px;
         }
         @include mobile {
-          width: 95px;
-          top: 42px;
-          right: 68px;
+          width: 47px;
+          top: 25px;
+          right: -18px;
         }
       }
 
@@ -810,7 +811,9 @@
         display: flex;
         align-items: flex-start;
         height: 480px;
-        
+        @include tablet {
+          display: none;
+        }
         &_box:nth-child(1){
           width: 387px;
           padding: 87px 101px 85px 97px;
@@ -823,7 +826,7 @@
           letter-spacing: normal;
           text-align: center;
           color: #110e03;
-
+          
           img{
             margin-top: 63px;
           }
