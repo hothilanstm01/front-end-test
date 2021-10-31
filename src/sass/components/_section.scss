@@ -357,17 +357,25 @@
     }
 
     &_products {
-      padding: 142px 175px 0px 174px;
-
+      margin: 0 133px;
+      margin-top: 142px;
+      display: flex;
+      align-items: flex-start;  
+      column-gap: 18px;  
+      flex-wrap: wrap;
       @include tablet {
-        padding: 5rem 1rem 0 10rem;
+        margin: 0;
+        padding: 5rem 1rem 0 2rem;
       }
       @include mid {
-        padding: 5rem 3rem 0 3.7rem;
+        margin-left: 2px;
+        padding: 5rem 4rem 0;
+        
       }
 
       @include mobile {
         padding: 5rem 0;
+        @include flex (center,center) 
       }
 
       &_box {
@@ -382,6 +390,7 @@
         @include mobile {
           width: 100%;
           text-align: center;
+          
         }
 
         &_title {
@@ -696,6 +705,7 @@
       padding-bottom: 141px;
       position: relative;
       margin-top: 149px;
+      
       @include mobile {
         padding-bottom: 0px;
       }
@@ -783,8 +793,10 @@
       }
 
       &_item {
-        overflow: hidden;
-
+        display: flex;
+        align-items: flex-start;
+        height: 480px;
+        
         &_box:nth-child(1){
           width: 387px;
           padding: 87px 101px 85px 97px;
@@ -799,28 +811,28 @@
           color: #110e03;
 
           img{
-            margin: 63px 0 0;
+            margin-top: 63px;
           }
+
+          
           
         }
         &_box:nth-child(5){
           width: 383px;
         }
         &_box {
-          
           text-transform: uppercase;
           width: 390px;
-          height: 480px;
           border: solid 3px #111 ;
-          
           border-left: 0;
-
+          
           .bg{
             background: #ff5500;
           }
           &_heade{
             @include flex(center, center);
-            padding: 27px 24px;
+            padding-top: 27px;
+            padding-bottom: 24px;
             font-size: 30px;
             font-weight: 800;
             font-stretch: normal;

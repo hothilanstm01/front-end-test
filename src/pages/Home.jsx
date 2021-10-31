@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom'
 
 //data
 import productData from '../assets/fake-data/products'
+import brandData from '../assets/fake-data/brand'
 
 
 // img
@@ -30,10 +31,7 @@ import pst6 from '../assets/images/icon/object-06.png'
 import pst7 from '../assets/images/icon/object-07.png'
 import window from '../assets/images/img.png'
 import issue01 from '../assets/images/icon/news-img-01.png'
-import issue02 from '../assets/images/icon/news-img-02.png'
-import issue03 from '../assets/images/icon/news-img-03.png'
-import issue04 from '../assets/images/icon/news-img-04.png'
-import issue05 from '../assets/images/icon/news-img-05.png'
+
 import xucxac1 from '../assets/images/news-object-03.png'
 import xucxac2 from '../assets/images/icon/news-object-02.png'
 import obj1 from '../assets/images/icon/news-object-03.png'
@@ -186,36 +184,26 @@ const Home = () => {
                 <SectionBody>
                     <div className="head">
                         <div className="section_body_products">
-                            <Grid
-                                col={5}
-                                mdcol={3}
-                                midcol={2}
-                                smcol={1}
-                                gap={18}
-                            >
-                                {
-                                    productData.map((item, index) => <Link  to="/">
-                                        <div className="section_body_products_box">
-                                            
-                                            <img src={item.image01} alt="" />
+                            {
+                                productData.map((item, index) => <Link  to="/">
+                                    <div className="section_body_products_box">
+                                        
+                                        <img src={item.image01} alt="" />
 
-                                            <p className="section_body_products_box_title">
-                                            {item.title}
+                                        <p className="section_body_products_box_title">
+                                        {item.title}
+                                        </p>
+
+                                        <div className="section_body_products_box_info">
+                                            <p className="section_body_products_box_info_price">{item.price}</p>
+                                            <p className="section_body_products_box_info_heart">
+                                                <img src={iconheart} alt="" />
+                                                <p>{item.heart}</p>
                                             </p>
-
-                                            <div className="section_body_products_box_info">
-                                                <p className="section_body_products_box_info_price">{item.price}</p>
-                                                <p className="section_body_products_box_info_heart">
-                                                    <img src={iconheart} alt="" />
-                                                    <p>{item.heart}</p>
-                                                </p>
-                                            </div>
-                                            
-
                                         </div>
-                                    </Link>)
-                                }
-                            </Grid>
+                                    </div>
+                                </Link>)
+                            }
                         </div>
 
                         <div className="see">
@@ -334,45 +322,22 @@ const Home = () => {
                     <div className="section_body_issue-body">
 
                         <div className="section_body_issue-body_item">
-
-                            <Grid
-                                col={5}
-                                mdcol={3}
-                                smcol={1}
-                                gap={0}
-                            >
-                                <div className="section_body_issue-body_item_box">
-                                    whpn
-                                    issue  
-                                    <img src={issue01} alt="" />
-                                </div>
-                                <div className="section_body_issue-body_item_box">
-                                    <div className="section_body_issue-body_item_box_heade">
-                                        b brand
+                            <div className="section_body_issue-body_item_box">
+                                whpn
+                                issue  
+                                <img src={issue01} alt="" />
+                            </div>
+                            {
+                                brandData.map((item, index) => (
+                                    <div className="section_body_issue-body_item_box" key={index}>
+                                        <div className="section_body_issue-body_item_box_heade">
+                                            {item.title}
+                                        </div>
+                                        <img src={item.image01} alt="" />
                                     </div>
-                                    <img src={issue02} alt="" />
-                                </div>
-                                <div className="section_body_issue-body_item_box">
-                                    <div className="section_body_issue-body_item_box_heade">
-                                    c brand
-                                    </div>
-                                    <img src={issue03} alt="" />
-                                </div>
-                                <div className="section_body_issue-body_item_box">
-                                    <div className="section_body_issue-body_item_box_heade bg">
-                                    D brand
-                                    </div> 
-                                    <img src={issue04} alt="" />
-                                </div>
-                                <div className="section_body_issue-body_item_box">
-                                    <div className="section_body_issue-body_item_box_heade">
-                                        e brand
-                                    </div> 
-                                    <img src={issue05} alt="" />
-                                </div>
-
-                                    
-                            </Grid>
+                                ))
+                            }
+                            
 
                         </div>
 
