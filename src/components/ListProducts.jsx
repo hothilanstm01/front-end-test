@@ -22,7 +22,7 @@ const ListProducts = () => {
                                         <div className="section_body_products_box_info">
                                             <p className="section_body_products_box_info_price">{item.price}</p>
                                             <p className="section_body_products_box_info_heart">
-                                                <img src="../images/icon/hearticon.png" alt="" />
+                                                <img src="../images/hearticon.png" alt="" />
                                                 <p>{item.heart}</p>
                                             </p>
                                         </div>
