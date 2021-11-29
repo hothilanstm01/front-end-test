@@ -1,13 +1,14 @@
 import React from 'react'
 
 import { BrowserRouter, Route } from 'react-router-dom'
-import Header from './Header'
-import Footer from './Footer'
-import Routes from '../routes/Routes'
+import Footer from './components/Footer'
+import Header from './components/Header'
+import Routes from './routes/Routes'
 
 
 
-const Layout = () => {
+
+const App = () => {
     return (
         <BrowserRouter>
             <Route>
@@ -24,5 +25,5 @@ const Layout = () => {
     )
 }
 
-export default Layout
+export default App
 

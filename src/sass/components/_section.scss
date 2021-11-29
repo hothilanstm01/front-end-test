@@ -427,7 +427,10 @@
           width: 100%;
           margin-bottom: 35px;
         }
-
+        @include mid {
+          width: 100%;
+          margin-bottom: 35px;
+        }
         @include mobile {
           width: 100%;
           text-align: center;
@@ -665,7 +668,10 @@
                 height: 80%;
               }
               @include lab {
-                height: 353px;
+                height: 335px;
+              }
+              @include tablet {
+                height: 352px;
               }
             }
             &_content {
@@ -732,6 +738,7 @@
                 text-align: left;
                 font-family: NotoSansCJKkr;
                 @include lab {
+                  padding-top: 40px;
                   width: 80%;
                 }
                 @include ipad {
@@ -945,7 +952,8 @@
           letter-spacing: normal;
           text-align: center;
           color: #110e03;
-
+          @include flex(center, center);
+          flex-wrap: wrap;
           @include tablet {
             height: 310px;
           }
@@ -956,12 +964,14 @@
             display: none;
           }
           p {
-            margin-left: 97px;
-            width: 189px;
+            width: 100%;
+            text-align: center;
+            padding: 0 40px;
             margin-top: 87px;
             @include lab {
               margin: 0;
-              margin-top: 28px;
+              margin-top: 40px;
+              padding: 0 60px;
               font-size: 2rem;
             }
             @include tablet {
@@ -971,11 +981,11 @@
             }
           }
           img {
-            margin-top: 63px;
+            margin-top: 75px;
             margin-bottom: 97px;
             @include lab {
               margin-top: 63px;
-              margin-bottom: 83px;
+              margin-bottom: 100px;
             }
             @include tablet {
               width: 70px;
@@ -1101,7 +1111,7 @@
         left: 223px;
         z-index: 2;
         @include lab {
-    left: 137px;
+          left: 137px;
         }
         @include tablet {
           width: 100px;
