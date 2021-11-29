@@ -40,7 +40,7 @@ const Header = () => {
                     </div>
                     <div className="header_menu_left" ref={menuLeft}>
                         <div className="header_menu_left_close" onClick={menuToggle}>
-                            <i class='bx bx-chevrons-left'></i>
+                                <i class='bx bx-x'></i>
                         </div>
 
                         <div className="header_menu_item  header_menu_left_item"  onClick={menuToggle}>
