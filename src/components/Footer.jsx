@@ -100,11 +100,13 @@ const Footer = () => {
                                 what happened
                             </div>
                             <div className="footer_content">
-                                <p className="footer_content_txt">[공지] 개인 정보 처리 방침 변경 사전 안내
-                                [공지] 29CM 강남 스토어 영업 종료
-                                [공지] 개인 정보 처리 방침 변경 사전 안내
-                                [공지] iOS 10 이하 버전 지원 중단 안내
-                                [공지] 개인 정보 처리 방침 변경 사전 안내</p>
+                                <p className="footer_content_txt">
+                                    <p>[공지] 개인 정보 처리 방침 변경 사전 안내</p>
+                                <p>[공지] 29CM 강남 스토어 영업 종료</p>
+                               <p> [공지] 개인 정보 처리 방침 변경 사전 안내</p>
+                                <p>[공지] iOS 10 이하 버전 지원 중단 안내</p>
+                                <p>[공지] 개인 정보 처리 방침 변경 사전 안내</p>
+                                </p>
                             </div>
                         </div>
                         
